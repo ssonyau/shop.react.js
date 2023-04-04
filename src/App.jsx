@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./compinents/Header";
 import Footer from "./compinents/footer";
+import Items from "./compinents/Items";
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class App extends React.Component {
         },
         {
           id: 2,
-          title: 'table',
+          title: 'Table',
           img: 'table.webp',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
           category: 'tables',
@@ -25,7 +26,7 @@ class App extends React.Component {
         },
         {
           id: 3,
-          title: 'dresser',
+          title: 'Dresser',
           img: 'dresser.jpeg',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
           category: 'dressers',
@@ -33,7 +34,7 @@ class App extends React.Component {
         },
         {
           id: 4,
-          title: 'wooden bed',
+          title: 'Wooden bed',
           img: 'wooden-bed.jpeg',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
           category: 'beds',
@@ -41,15 +42,7 @@ class App extends React.Component {
         },
         {
           id: 5,
-          title: 'iron bed',
-          img: 'iron bed.jpeg',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-          category: 'beds',
-          price: '999.99'
-        },
-        {
-          id: 5,
-          title: 'iron bed',
+          title: 'Iron bed',
           img: 'iron bed.jpeg',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
           category: 'beds',
@@ -62,6 +55,7 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <Header />
+        <Items items={this.state.items} />
         <Footer />
       </div>
     );
