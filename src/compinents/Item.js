@@ -1,3 +1,4 @@
+import { alt } from 'joi'
 import React, { Component } from 'react'
 
 export class Item extends Component {
