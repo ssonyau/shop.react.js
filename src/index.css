@@ -44,9 +44,9 @@ opacity: 0.5;
 
 header .presentation{
     margin: 50px 0;
-    background: url(//src/img/Панорама_-_уменьш.jpg) no-repeat;
-    width: 1336px;
-    height: 500px;
+    background: url(/src/img/Панорама_-_уменьш.jpg) no-repeat;
+    width: 1325px;
+    height: 446px;
     background-blend-mode: multiply;
     background-color: #bebdbd;
     position: relative;
